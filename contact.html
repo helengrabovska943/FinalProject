@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MY FINAL PROJECT</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/devices.css">
+	
+	<!-- GoogleFonts -->
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<div id="section-topbar">
+		<div id="topbar-inner">
+			<div class="container">
+				<div class="sixteen columns">
+					<div class="dropdown">
+						<ul id="nav" class="nav">
+							<li class="menu-item"><a href="index.html" title="Profile"><img src="images/icon_profile.png"/></a></li>
+							<li class="menu-item"><a href="resume.html" title="Resume"><img src="images/icon_resume.png"/></a></li>
+							<li class="menu-item"><a href="#section-contact" title="Contact"><img src="images/icon_testimonials.png"/></a></li>
+						</ul>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div id="section-intro">
+    
+    <div id="section-resume">
+		<div class="section-title">
+		  <div class="container">
+		   
+		      <div class="sixteen columns">
+		        <h2>Contact</h2>
+	          </div>
+		      <div class="clear"></div>
+	        
+		  </div>
+		</div>
+
+	<!-- Input Form -->
+	<div id="section-contact">
+
+		<div class="container">
+			<div class="nine columns">
+				<h3>Send me a message</h3>
+
+				<div id="contact-warning">
+                	Something went wrong, please try again.<br />
+				</div>
+				
+				<div id="contact-success">
+					Email successfuly sent, thank you.<br />	
+				</div>
+				
+				<form name="contactForm" id="contactForm" method="post" action="includes/include.emailSender.php">
+					<fieldset>
+					
+						<label for="contactName">Name <span class="required">*</span></label>
+						<input name="contactName" type="text" id="contactName" size="30" value="" />
+						
+						<br />
+						<label for="contactEmail">Email <span class="required">*</span></label>
+						<input name="contactEmail" type="text" id="contactEmail" size="30" value="" />
+                        
+                        <br />
+						<label for="contactMessage">Message <span class="required">*</span></label>
+						<textarea name="contactMessage" id="contactMessage" rows="6" cols="7"></textarea>
+                        
+                        <br />
+						<label for="contactCaptcha"><strong>3</strong> + <strong>10</strong> = <span class="required">*</span></label>
+						<input name="contactCaptcha" type="text" id="contactCaptcha" size="30" value="" />
+
+						<input name="contactCaptchaAnswer" type="hidden" id="contactCaptchaAnswer" value="13" />
+
+						<br />
+						<label class="placeholder">&nbsp;</label>
+						<button class="submit">Submit</button>
+					</fieldset>
+				</form>
+			</div>
+
+			<div class="seven columns">
+				<h3>References</h3>
+				<div id="box-references">
+					<div class="item">
+						<h4>David Beck</h4>
+						<p>
+							<span class="font-color-primary">Classic Business Solutions</span><br />
+							<em>New York</em>, NY<br />
+							<a href="mailto:dbeck@classicbusinesssolutions.com">dbeck@classicbusinesssolutions.com</a><br />
+							<a href="tel:1234567890">212-563-9100</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Footer -->
+	<div id="section-footer">
+		<div class="container">
+			<div class="six columns">
+				<p><a href="helengrabovska@gmail.com">helengrabovska@gmail.com</a></p>
+			</div>
+
+			<div class="ten columns">
+				<ul id="social">
+				  <a href="https://www.linkedin.com/pub/helen-grabovska/100/7a3/864" target="_blank" title=""><img src="images/icon_linkedin.png" alt="Linkedin" /></a>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/mechanics.js"></script>
+</body>
+</html>
